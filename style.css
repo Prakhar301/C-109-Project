@@ -1,0 +1,19 @@
+body{
+    background: hsla(0, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 100%, 50%, 1) 0%, hsla(55, 100%, 50%, 1) 25%, hsla(175, 100%, 50%, 1) 50%, hsla(323, 100%, 50%, 1) 75%, hsla(0, 100%, 50%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 100%, 50%, 1) 0%, hsla(55, 100%, 50%, 1) 25%, hsla(175, 100%, 50%, 1) 50%, hsla(323, 100%, 50%, 1) 75%, hsla(0, 100%, 50%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 100%, 50%, 1) 0%, hsla(55, 100%, 50%, 1) 25%, hsla(175, 100%, 50%, 1) 50%, hsla(323, 100%, 50%, 1) 75%, hsla(0, 100%, 50%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF0000", endColorstr="#FFEA00", GradientType=1 );
+}
+#camera,#result{
+    border:hsla(220, 90%, 47%, 1) ridge 10px;
+    width: 300px !important;
+    height:300px !important;
+}
+.hone{
+    font-size: 30px !important;
+}

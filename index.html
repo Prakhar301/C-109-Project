@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Hand Gestures Recogintion</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1 class="btn btn-default hone">
+                    Hand Gestures Recognizer App
+                    <br>
+                    <span>&#128076;</span>
+                    <span> &#9995;</span>
+                    <span>&#128077;</span>
+                    <span>&#128078;</span>
+                    <span> &#129304;</span>
+                    <span>&#128075; </span>
+                </h1>
+                <h2>Take a selfie of a gesture to understand the meaning</h2>
+                <h4>
+                    Model is trained to identify the following hand gestures    
+                    <br><br>
+                    <span>&#128076;</span>
+                    <span> &#9995;</span>
+                    <span>&#128077;</span>
+                    <span>&#128078;</span>
+                    <span> &#129304;</span>
+                </h4>
+                <div>
+                    <label>Webcam-</label>
+                    <div id="camera"></div>
+                    <br>
+                    <button onclick="take_snapshot()" class="btn btn-success">Capture Image</button>
+                </div>
+                <br>    
+                <div>
+                    <label>Snapshot-</label>
+                    <div id="result"></div>
+                    <br>
+                    <button onclick="identify()" class="btn btn-success">Identify Image</button>
+                </div>
+                <br><br><br>
+                <div id="resultant"></div>
+                <div id="emojian"></div>
+            </center>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
